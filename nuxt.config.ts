@@ -4,6 +4,10 @@ import Aura from '@primeuix/themes/aura';
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
+  ssr: true,
+  nitro: {
+    preset: 'static',
+  },
   modules: ['@nuxtjs/tailwindcss', '@primevue/nuxt-module'],
   primevue: {
       options: {
